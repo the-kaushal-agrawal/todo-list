@@ -23,6 +23,6 @@ app.post("/",function(req,res){
       things.push(dy);
       res.redirect("/");
 })
-app.listen(3000,function(){
+app.listen(process.env.PORT,function(){
     console.log("Server is working");
 });
